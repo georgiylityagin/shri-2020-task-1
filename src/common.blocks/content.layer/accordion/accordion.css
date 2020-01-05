@@ -1,0 +1,13 @@
+/* блок аккордеона */
+.e-accordion {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* .e-accordion__short {
+    
+} */
+
+.e-accordion__more {
+    display: none;
+}

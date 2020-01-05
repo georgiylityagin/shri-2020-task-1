@@ -1,0 +1,54 @@
+@import '/src/common.blocks/theme.layer/theme.css';
+
+/* Блок grid - Адаптивная сетка для контентных блоков. */
+.grid {
+    display: grid;
+}
+
+/* Модификаторы */
+/* Количество возможных колонок при ширине экрана screen-m */
+.grid_m-columns_12 {
+    grid-template-columns: repeat(12, 1fr);
+}
+.grid_m-columns_10 {
+    grid-template-columns: repeat(10, 1fr);
+}
+
+/* Отступ между колонками */
+.grid_col-gap_two-thirds {
+    grid-column-gap: calc(var(--gap) * 2/3);
+}
+.grid_col-gap_full {
+    grid-column-gap: var(--gap);
+}
+.grid_col-gap_half {
+    grid-column-gap: calc(var(--gap) / 2);
+}
+
+/* Отступ между строками */
+.grid_row-gap_half {
+    grid-row-gap: calc(var(--gap) / 2);
+}
+.grid_row-gap_full{
+    grid-row-gap: var(--gap);
+}
+
+/* Элемент fraction - Колоночный элемент c шириной в несколько колонок */
+
+/* Модификаторы */
+/* Ширина элемента в колонках при ширине экрана screen-m */
+.grid__fraction_m-col_2 {
+    grid-column: span 2;
+}
+.grid__fraction_m-col_3 {
+    grid-column: span 3;
+}
+.grid__fraction_m-col_4 {
+    grid-column: span 4;
+}
+.grid__fraction_m-col_5 {
+    grid-column: span 5;
+}
+.grid__fraction_m-col_8 {
+    grid-column: span 8;
+}

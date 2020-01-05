@@ -1,0 +1,17 @@
+{
+  "name": "shri-2020-task-1",
+  "version": "1.0.0",
+  "description": "Project build ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "node gulpfile.js"
+  },
+  "author": "Georgiy Lityagin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0"
+  }
+}

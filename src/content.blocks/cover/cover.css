@@ -1,0 +1,18 @@
+@import '/src/common.blocks/patterns.layer/card/card.css';
+@import '/src/common.blocks/content.layer/text/text.css';
+@import '/src/common.blocks/theme.layer/theme.css';
+@import '/src/common.blocks/content.layer/image/image.css';
+
+
+.cover {
+    min-height: 472px;
+}
+
+.cover__preview {
+    height: 180px;
+    margin-bottom: var(--indent-l);
+}
+
+.cover__footer {
+    --button-color: var(--text-primary);
+}

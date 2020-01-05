@@ -1,0 +1,20 @@
+@import '/src/common.blocks/theme.layer/theme.css';
+
+/* .header — сквозной блок шапки */
+.header {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: var(--indent-xxxl) 0;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 179px;
+    height: 34px;
+    background-color: var(--text-primary);
+}

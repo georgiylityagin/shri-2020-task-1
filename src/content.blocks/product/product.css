@@ -1,0 +1,17 @@
+@import '/src/common.blocks/patterns.layer/card/card.css';
+@import '/src/common.blocks/content.layer/text/text.css';
+@import '/src/common.blocks/content.layer/image/image.css';
+
+.product {
+    min-height: 300px;
+    border-width: 3px;
+}
+
+.product__image .image {
+    height: 160px;
+    border-color: var(--bgr-default);
+}
+
+.product__title {
+    margin-bottom: 47px;
+}

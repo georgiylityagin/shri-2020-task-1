@@ -1,0 +1,104 @@
+@import '/src/common.blocks/theme.layer/theme.css';
+
+/* Блок card */
+.card {
+    position: relative;
+}
+
+/* Выделение границ карточки */
+.card_border_all{
+    border-style: solid;
+    border-color: var(--bgr-border);
+}
+
+/* Фон подложки */
+.card_view_default{
+    background-color: var(--bgr-default);
+}
+
+.card__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+/* Элемент content - Элемент для основного контента */
+/* Распределение элементов по горизонтали*/
+.card__content_distribute_center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+/* Вертикальное выравнивание в элементе */
+.card__content_vertical-align_center { 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+/* Внутренние отступы со всех сторон */
+.card__content_space-a_m { padding: var(--indent-m); }
+.card__content_space-a_l { padding: var(--indent-l); }
+.card__content_space-a_xl { padding: var(--indent-xl); }
+.card__content_space-a_xxl { padding: var(--indent-xxl); }
+.card__content_space-a_xxxl { padding: var(--indent-xxxl); }
+
+
+/* Элемент footer - Подвал карточки или контента */
+.card__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+/* Распределение элементов по горизонтали*/
+.card__footer_distribute_between { 
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+}
+.card__footer_distribute_center { 
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+.card__footer_distribute_right { 
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+}
+
+/* Вертикальное выравнивание в элементе */
+.card__footer_vertical-align_center { 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+.card__footer_vertical-align_top { 
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+}
+.card__footer_vertical-align_bottom { 
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+}
+/* Внутренние отступы со всех сторон */
+.card__footer_space-a_m { padding: var(--indent-m); }
+.card__footer_space-a_l { padding: var(--indent-l); }
+.card__footer_space-a_xl { padding: var(--indent-xl); }
+.card__footer_space-a_xxl { padding: var(--indent-xxl); }
+.card__footer_space-a_xxxl { padding: var(--indent-xxxl); }

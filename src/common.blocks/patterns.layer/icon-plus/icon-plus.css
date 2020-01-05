@@ -1,0 +1,29 @@
+@import '/src/common.blocks/theme.layer/theme.css';
+
+/* Блок icon-plus - Самый маленький и самый популярный блок pt-icon-plus выравнивает любой графический элемент рядом с контентом */
+.icon-plus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.icon-plus_vertical-align_center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+/* Элемент icon - Контейнер для графичекого элемента */
+
+/* Отступ справа */
+.icon-plus__icon_indent-r_s { margin-right: var(--indent-s) }
+.icon-plus__icon_indent-r_m { margin-right: var(--indent-m) }
+
+/* Отступ  слева */
+.icon-plus__icon_indent-l_l { margin-left: var(--indent-l) }
+
+/* Элемент block - Элемент в который вкладывается контент, например текст. Используется без модификаторов */

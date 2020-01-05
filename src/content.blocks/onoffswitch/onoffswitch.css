@@ -1,0 +1,23 @@
+@import '/src/common.blocks/theme.layer/theme.css';
+
+/* Переключатель темы */
+.onoffswitch {
+    width: 97px;
+    height: 32px;
+    border: 2px solid var(--bgr-border);
+
+    display: flex;
+    align-items: center;
+}
+
+.onoffswitch_checked {
+    justify-content: flex-end;
+}
+
+.onoffswitch__button {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    background-color: var(--bgr-border);
+    margin: 0 2px;
+}

@@ -1,0 +1,30 @@
+@import '/src/common.blocks/patterns.layer/card/card.css';
+@import '/src/common.blocks/content.layer/text/text.css';
+@import '/src/common.blocks/content.layer/avatar/avatar.css';
+@import '/src/common.blocks/content.layer/brand-logo/brand-logo.css';
+@import '/src/common.blocks/theme.layer/theme.css';
+
+/* .event — блок мероприятия */
+.event {
+    min-height: 400px;
+}
+
+
+/* контейнер для изображений */
+.event__preview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: var(--indent-xxl);
+}
+
+/* левое изображение в блоке */
+.event__speaker {
+    margin-right: var(--indent-xs);
+}
+
+/* заголовок события */
+.event__title {
+    margin-bottom: var(--indent-s);
+}

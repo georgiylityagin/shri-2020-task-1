@@ -1,0 +1,24 @@
+@import '/src/common.blocks/patterns.layer/form/form.css';
+@import '/src/common.blocks/content.layer/text/text.css';
+@import '/src/common.blocks/content.layer/button/button.css';
+@import '/src/common.blocks/content.layer/input/input.css';
+
+
+.payment,
+.payment__header,
+.payment__content,
+.payment__footer {
+    border-width: 3px;
+}
+
+.payment__content .form__item:last-child {
+    margin-bottom: 0;
+}
+
+.payment__footer {
+    --button-color: var(--bgr-accent);
+}
+
+.payment__footer .button {
+    margin-left: auto;
+}
