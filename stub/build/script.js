@@ -1,6 +1,6 @@
 document.querySelector('body').addEventListener('click', eventsHandler);
 
-function eventsHandler() {
+function eventsHandler(e) {
     if (e.target.classList.contains('onoffswitch__button')) {
         switchTheme(e.target);
     } else if (hasSomeParentTheClass(e.target, 'e-accordion')) {
