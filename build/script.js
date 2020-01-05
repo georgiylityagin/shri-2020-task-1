@@ -1,4 +1,6 @@
-document.querySelector('body').addEventListener('click', eventsHandler);
+if (document.querySelector('body')) {
+    document.querySelector('body').addEventListener('click', eventsHandler);
+}
 
 function eventsHandler(e) {
     if (e.target.classList.contains('onoffswitch__button')) {
