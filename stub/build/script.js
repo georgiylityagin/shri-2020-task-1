@@ -1,13 +1,11 @@
-window.onload = eventsHandler();
+document.querySelector('body').addEventListener('click', eventsHandler);
 
 function eventsHandler() {
-    document.body.addEventListener('click', function(e) {
-        if (e.target.classList.contains('onoffswitch__button')) {
-            switchTheme(e.target);
-        } else if (hasSomeParentTheClass(e.target, 'e-accordion')) {
-            accordionToggle(getParentWithTheClass(e.target, 'e-accordion'));
-        }       
-    });
+    if (e.target.classList.contains('onoffswitch__button')) {
+        switchTheme(e.target);
+    } else if (hasSomeParentTheClass(e.target, 'e-accordion')) {
+        accordionToggle(getParentWithTheClass(e.target, 'e-accordion'));
+    }
 }
 
 function switchTheme(button) {
