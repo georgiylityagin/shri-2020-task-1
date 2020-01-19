@@ -7,8 +7,11 @@
     border-width: 3px;
 }
 
-.product__image .image {
+.product__image {
     height: 160px;
+}
+
+.product__image > .image {
     border-color: var(--bgr-default);
 }
 

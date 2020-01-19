@@ -1,13 +1,15 @@
+@import '/src/common.blocks/theme.layer/theme.css';
 @import '/src/common.blocks/content.layer/text/text.css';
 
-/* .footer — сквозной блок подвала */
 .footer {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: var(--indent-xxxl) 0;
+    width: 100%;
+    padding: var(--indent-xxxl) var(--gap);
 }
 
 .footer__content {
+    max-width: 1280px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -15,10 +15,6 @@
     margin-bottom: 0;
 }
 
-.payment__footer {
-    --button-color: var(--bgr-accent);
-}
-
 .payment__footer .button {
     margin-left: auto;
 }

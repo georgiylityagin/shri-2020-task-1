@@ -1,4 +1,9 @@
-/* Блок button - Блок служит для отображения кнопок. */
+@import '/src/common.blocks/theme.layer/theme.css';
+
+/*
+    Блок button - служит для отображения кнопок.
+*/
+
 .button {
     background-color: var(--bgr-accent);
 }
@@ -9,7 +14,7 @@
 .button_size_l, 
 .button_size_xl, 
 .button_size_xxl { 
-    width: 200px
+    width: 200px;
 }
 
 .button_size_s { height: 24px; }

@@ -14,30 +14,8 @@
 @import './content.blocks/onoffswitch/onoffswitch.css';
 @import './content.blocks/footer/footer.css';
 
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-.page {
-    background-color: var(--bgr-default);   
-}
-
-
-/* Брейкпойнты */
-@media screen and (max-width: 1023px) {
-    /* Отступы в сетке */
-    .theme_gap_small {
-        --gap: var(--indent-s);
-    }
-
-    .grid {
-        grid-template-columns: repeat(1, 100%);
-    }
-
-    .grid__fraction_m-col_2, .grid__fraction_m-col_3, .grid__fraction_m-col_4, .grid__fraction_m-col_5, .grid__fraction_m-col_8 {
-        grid-column: auto;
-    }
 }

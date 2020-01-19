@@ -1,6 +1,9 @@
 @import '/src/common.blocks/theme.layer/theme.css';
 
-/* Блок card */
+/* 
+    Блок card - карточка для представления информации в компактном формате
+*/
+
 .card {
     position: relative;
 }
@@ -16,6 +19,9 @@
     background-color: var(--bgr-default);
 }
 
+/* 
+    Элемент content - для основного контента
+*/
 .card__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -26,7 +32,6 @@
     flex-direction: column;
 }
 
-/* Элемент content - Элемент для основного контента */
 /* Распределение элементов по горизонтали*/
 .card__content_distribute_center {
     -webkit-box-align: center;
@@ -49,7 +54,9 @@
 .card__content_space-a_xxxl { padding: var(--indent-xxxl); }
 
 
-/* Элемент footer - Подвал карточки или контента */
+/* 
+    Элемент footer - подвал карточки или контента
+*/
 .card__footer {
     position: absolute;
     bottom: 0;
@@ -96,6 +103,7 @@
     -ms-flex-pack: end;
         justify-content: flex-end;
 }
+
 /* Внутренние отступы со всех сторон */
 .card__footer_space-a_m { padding: var(--indent-m); }
 .card__footer_space-a_l { padding: var(--indent-l); }

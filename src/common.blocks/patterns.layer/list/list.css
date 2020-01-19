@@ -1,6 +1,9 @@
 @import '/src/common.blocks/theme.layer/theme.css';
 
-/* Блок list - используется для вертикального представления повторяющихся сущностей. Отлично подходит для отображения истории, контактов, вертикальных меню */
+/*
+    Блок list - используется для вертикального представления повторяющихся сущностей. Отлично подходит для отображения истории, контактов, вертикальных меню
+*/
+
 .list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12,15 +15,16 @@
 }
 
 /* Обводка всего списка */
-.list_border_all { 
-    border-style: solid;
-    border-color: var(--bgr-border);
+.list_border_all {
+    border: 3px solid var(--bgr-border);
 }
 
 /* Фон */
 .list_view_default { background-color: var(--bgr-default); }
 
-/* Элемент item - Единственный элемент блока, который определяет строку списка. Является контейнером для контента строки. Элементы item могут включать в себя друг друга */
+/*
+    Элемент item - определяет строку списка.
+*/
 .list__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -29,12 +33,10 @@
 
 /* Обводка */
 .list__item_border_bottom { 
-    border-bottom-style: solid;
-    border-bottom-color: var(--bgr-border);
+    border-bottom: 3px solid var(--bgr-border);
  }
 .list__item_border_top { 
-    border-top-style: solid;
-    border-top-color: var(--bgr-border);
+    border-top: 3px solid var(--bgr-border);
 }
 
 /* Распределение контента по горизонтали */
@@ -52,16 +54,16 @@
 }
 
 /* Внешний отступ сверху */
-.list__item_indent-t_m { margin-top: var(--indent-m) }
+.list__item_indent-t_m { margin-top: var(--indent-m); }
 
 /* Внешний отступ снизу */
-.list__item_indent-b_s { margin-bottom: var(--indent-s) }
-.list__item_indent-b_m { margin-bottom: var(--indent-m) }
-.list__item_indent-b_l { margin-bottom: var(--indent-l) }
-.list__item_indent-b_xl { margin-bottom: var(--indent-xl) }
+.list__item_indent-b_s { margin-bottom: var(--indent-s); }
+.list__item_indent-b_m { margin-bottom: var(--indent-m); }
+.list__item_indent-b_l { margin-bottom: var(--indent-l); }
+.list__item_indent-b_xl { margin-bottom: var(--indent-xl); }
 
 /* Внутренний отступ снизу */
-.list__item_space-b_s { padding-bottom: var(--indent-s) }
+.list__item_space-b_s { padding-bottom: var(--indent-s); }
 
 /* Внутренние отступы со всех сторон */
-.list__item_space-a_m { padding: var(--indent-m) }
+.list__item_space-a_m { padding: var(--indent-m); }

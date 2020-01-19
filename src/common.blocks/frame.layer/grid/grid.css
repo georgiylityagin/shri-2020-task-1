@@ -1,11 +1,13 @@
 @import '/src/common.blocks/theme.layer/theme.css';
 
-/* Блок grid - Адаптивная сетка для контентных блоков. */
+/* 
+    Блок grid - Адаптивная сетка для контентных блоков. 
+*/
+
 .grid {
     display: grid;
 }
 
-/* Модификаторы */
 /* Количество возможных колонок при ширине экрана screen-m */
 .grid_m-columns_12 {
     grid-template-columns: repeat(12, 1fr);
@@ -33,9 +35,10 @@
     grid-row-gap: var(--gap);
 }
 
-/* Элемент fraction - Колоночный элемент c шириной в несколько колонок */
+/* 
+    Элемент fraction - Колоночный элемент c шириной в несколько колонок
+*/
 
-/* Модификаторы */
 /* Ширина элемента в колонках при ширине экрана screen-m */
 .grid__fraction_m-col_2 {
     grid-column: span 2;
@@ -51,4 +54,15 @@
 }
 .grid__fraction_m-col_8 {
     grid-column: span 8;
+}
+
+/* Брейкпойнты */
+@media screen and (max-width: 1023px) {
+    .grid {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .grid__fraction_m-col_2, .grid__fraction_m-col_3, .grid__fraction_m-col_4, .grid__fraction_m-col_5, .grid__fraction_m-col_8 {
+        grid-column: auto;
+    }
 }

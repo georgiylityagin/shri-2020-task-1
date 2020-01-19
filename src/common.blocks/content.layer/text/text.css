@@ -1,7 +1,10 @@
 @import '/src/common.blocks/theme.layer/theme.css';
 
 
-/* Блок text */
+/* 
+    Блок text
+*/
+
 .text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15,7 +18,6 @@
     -ms-flex-align: baseline;
         align-items: baseline;
 }
-
 
 /* Горизонтальное выравнивание текста */
 .text_align_center { 
@@ -34,6 +36,7 @@
 
     --line-space: calc(var(--line-spacing-s) - var(--text-height-s));
 }
+
 .text_size_m {
     --word-width-s: 24px;
     --word-width-m: 56px;
@@ -43,6 +46,7 @@
 
     --line-space: calc(var(--line-spacing-m) - var(--text-height-m));
 }
+
 .text_size_l {
     --word-width-s: 28px;
     --word-width-m: 68px;
@@ -52,6 +56,7 @@
 
     --line-space: calc(var(--line-spacing-l) - var(--text-height-l));
 }
+
 .text_size_xl {
     --word-width-s: 32px;
     --word-width-m: 74px;
@@ -64,6 +69,7 @@
     margin-top: -2px;
     margin-bottom: 2px;
 }
+
 .text_size_xxl {
     --word-width-s: 36px;
     --word-width-m: 88px;
@@ -77,21 +83,22 @@
     margin-bottom: 3px;
 }
 
-
 /* Тип текста */
 .text_type_h1 { 
     margin: 18px 0 24px;
 }
+
 .text_type_h2 {
     margin: 45px 0 21px;
 }
+
 .text_type_h3 {
     margin: 42px 0 0;
 }
+
 .text_type_p {
     margin: 42px 0 21px;
 }
-
 
 /* 	Цвет текста */
 .text_view_primary { --text-color: var(--text-primary); }
@@ -100,14 +107,16 @@
 .text_view_link { --text-color: var(--text-link); }
 
 
-/* Элемент word - Для эмуляции слов, внутрь блока складывается элемент word */
+/* 
+    Элемент word - Для эмуляции слов, внутрь блока складывается элемент word
+*/
 .text__word {
     margin: calc(var(--line-space) / 2) 0;
     height: var(--word-height);
     background-color: var(--text-color);
 }
 
-
+/* Ширина элемента word */
 .text__word_width_s { width: var(--word-width-s); }
 .text__word_width_m { width: var(--word-width-m); }
 .text__word_width_l { width: var(--word-width-l); }

@@ -1,4 +1,10 @@
-/* В блоке theme описаны глобальные переменные отступов, цветов и типографики */
+/* 
+    В блоке theme описаны глобальные переменные отступов, цветов и типографики 
+*/
+
+.theme {
+    background-color: var(--bgr-default);
+}
 
 .theme_color_project-default {
     --bgr-default: #FFFFFF;
@@ -50,7 +56,6 @@
     --text-link: #FFF;
 }
 
-
 /* Модификации размеров */
 .theme_size_default {
     /* Значения размеров высоты текста */
@@ -68,7 +73,6 @@
     --line-spacing-xxl: 38px;
 }
 
-
 /* Модификации отступов */
 .theme_space_default {
     --indent-xxxs: 3px;
@@ -84,8 +88,14 @@
     --indent-xxxxxl: 72px;
 }
 
-
 /* Отступы в сетке */
 .theme_gap_small {
     --gap: var(--indent-xl);
+}
+
+/* Брейкпойнты */
+@media screen and (max-width: 1023px) {
+    .theme_gap_small {
+        --gap: var(--indent-s);
+    }
 }

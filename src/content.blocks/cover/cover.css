@@ -12,7 +12,3 @@
     height: 180px;
     margin-bottom: var(--indent-l);
 }
-
-.cover__footer {
-    --button-color: var(--text-primary);
-}

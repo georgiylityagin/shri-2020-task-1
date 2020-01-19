@@ -1,10 +1,13 @@
 @import '/src/common.blocks/theme.layer/theme.css';
 
-/* Блок section - Контейнер для отделения группы блоков */
+/*
+    Блок section - контейнер для отделения группы блоков
+*/
 
 /* Внешний отступ снизу */
-.section_indent-b_xxl { margin-bottom: var(--indent-xxl) }
-.section_indent-b_xxxxl { margin-bottom: var(--indent-xxxxl) }
+.section_indent-b_xxl { margin-bottom: var(--indent-xxl); }
+.section_indent-b_xxxxl { margin-bottom: var(--indent-xxxxl); }
+
 /* Внутренние отступы по вертикали */
 .section_space-v_xxl { padding: var(--indent-xxl) 0 }
 .section_space-v_xxxxl { padding: var(--indent-xxxxl) 0 }

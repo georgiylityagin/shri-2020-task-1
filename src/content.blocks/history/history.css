@@ -1,3 +1,4 @@
+@import '/src/common.blocks/theme.layer/theme.css';
 @import '/src/common.blocks/patterns.layer/list/list.css';
 @import '/src/common.blocks/content.layer/text/text.css';
 @import '/src/common.blocks/content.layer/brand-logo/brand-logo.css';
@@ -5,9 +6,8 @@
 @import '/src/common.blocks/patterns.layer/icon-plus/icon-plus.css';
 
 
-
 .history__transaction {
-    padding-top: 0;
+    margin-top: calc(0px - var(--indent-m));
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -17,17 +17,6 @@
 
 .history__transaction:last-child {
     border-bottom: none;
-}
-
-.history__description {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-}
-
-.history__actions {
-    margin-bottom: 0;
 }
 
 .history__show {
@@ -56,4 +45,15 @@
 .history__quantity {
     position: absolute;
     right: 0;
+}
+
+.history__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.history__actions {
+    margin-bottom: 0;
 }

@@ -1,6 +1,8 @@
 @import '/src/common.blocks/theme.layer/theme.css';
 
-/* Блок informer - Информационный блок, имеющий статус. Нужное оформление достигается путём миксования к нему блока темы со статусным значением цветового модификатора */
+/*
+    Блок informer - Информационный блок, имеющий статус. Нужное оформление достигается путём миксования к нему блока темы со статусным значением цветового модификатора
+*/
 
 .informer {
     position: relative;
@@ -8,11 +10,13 @@
 
 /* Обводка всего блока. Цвет границы определяется темой. Ширина границы — 3px */
 .informer_border_all { border: 3px solid var(--bgr-border); }
+
 /* view - Фон всего блока. Цвет фона определяется темой */
 .informer_view_default { background-color: var(--bgr-default); }
 
-/* Элемент content */
-/* Элемент action - Располагается в конце информера для кнопок и других контролов */
+/* 
+    Элементы content и action 
+*/
 .informer__content,
 .informer__action {
     display: -webkit-box;
@@ -57,7 +61,11 @@
 
 /* space-a - Внутренние отступы по всем сторонам */
 .informer__content_space-a_xl,
-.informer__action_space-a_xl { padding: var(--indent-xl); }
+.informer__action_space-a_xl {
+    padding: var(--indent-xl);
+}
 
 .informer__content_space-a_xxl,
-.informer__action_space-a_xxl { padding: var(--indent-xxl); }
+.informer__action_space-a_xxl {
+    padding: var(--indent-xxl);
+}
