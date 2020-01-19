@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <img id="indexReference" src="./img/index.png" alt="reference" style="display: none">
+    <img id="indexProduced" src="./img/index_page_screenshot.png" alt="produced" style="display: none">
+
+    <img id="productReference" src="./img/product.png" alt="reference" style="display: none">
+    <img id="producedProduced" src="./img/product_page_screenshot.png" alt="produced" style="display: none">
+
+    <div>
+        <h1 style="text-align: center;">Результаты сравнения index.html</h1>
+        <div id="indexResult"></div>
+    </div>
+
+    <div>
+        <h1 style="text-align: center;">Результаты сравнения product.html</h1 style="text-align: center;">
+        <div id="productResult"></div>
+    </div>
+
+
+
+    <script src="https://bundle.run/pixelmatch"></script>
+
+    <script src="./test.js"></script>
+
+    <script>
+        compareImages("indexReference", "indexProduced", "indexResult", 0.1);
+        compareImages("productReference", "producedProduced", "productResult", 0.1);
+
+    </script>
+</body>
+</html>
