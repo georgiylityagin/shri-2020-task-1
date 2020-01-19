@@ -1,0 +1,122 @@
+@import '/src/base.blocks/theme.layer/theme.css';
+
+
+/* 
+    Блок text
+*/
+
+.text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+        align-items: baseline;
+}
+
+/* Горизонтальное выравнивание текста */
+.text_align_center { 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+/* Размер текста */
+.text_size_s {
+    --word-width-s: 20px;
+    --word-width-m: 48px;
+    --word-width-l: 100px;
+
+    --word-height: 8px;
+
+    --line-space: calc(var(--line-spacing-s) - var(--text-height-s));
+}
+
+.text_size_m {
+    --word-width-s: 24px;
+    --word-width-m: 56px;
+    --word-width-l: 114px;
+
+    --word-height: 10px;
+
+    --line-space: calc(var(--line-spacing-m) - var(--text-height-m));
+}
+
+.text_size_l {
+    --word-width-s: 28px;
+    --word-width-m: 68px;
+    --word-width-l: 138px;
+
+    --word-height: 11px;
+
+    --line-space: calc(var(--line-spacing-l) - var(--text-height-l));
+}
+
+.text_size_xl {
+    --word-width-s: 32px;
+    --word-width-m: 74px;
+    --word-width-l: 154px;
+
+    --word-height: 13px;
+
+    --line-space: calc(var(--line-spacing-xl) - var(--text-height-xl));
+
+    margin-top: -2px;
+    margin-bottom: 2px;
+}
+
+.text_size_xxl {
+    --word-width-s: 36px;
+    --word-width-m: 88px;
+    --word-width-l: 184px;
+
+    --word-height: 16px;
+
+    --line-space: calc(var(--line-spacing-xxl) - var(--text-height-xxl));
+
+    margin-top: -3px;
+    margin-bottom: 3px;
+}
+
+/* Тип текста */
+.text_type_h1 { 
+    margin: 18px 0 24px;
+}
+
+.text_type_h2 {
+    margin: 45px 0 21px;
+}
+
+.text_type_h3 {
+    margin: 42px 0 0;
+}
+
+.text_type_p {
+    margin: 42px 0 21px;
+}
+
+/* 	Цвет текста */
+.text_view_primary { --text-color: var(--text-primary); }
+.text_view_secondary { --text-color: var(--text-secondary); }
+.text_view_ghost { --text-color: var(--text-additional); }
+.text_view_link { --text-color: var(--text-link); }
+
+
+/* 
+    Элемент word - Для эмуляции слов, внутрь блока складывается элемент word
+*/
+.text__word {
+    margin: calc(var(--line-space) / 2) 0;
+    height: var(--word-height);
+    background-color: var(--text-color);
+}
+
+/* Ширина элемента word */
+.text__word_width_s { width: var(--word-width-s); }
+.text__word_width_m { width: var(--word-width-m); }
+.text__word_width_l { width: var(--word-width-l); }

@@ -1,0 +1,17 @@
+@import '/src/base.blocks/theme.layer/theme.css';
+
+/*
+    Блок placeholder - служит для отображения изображений заглушек, например в информерах.
+    По умолчанию имеет такой же цвет фона как и цвет основного текста
+*/
+
+.placeholder { background-color: var(--text-primary); }
+
+/* Размер */
+.placeholder_size_m {
+    height: 72px;
+    width: 72px;
+}
+
+/* Цвет фона. Задается темой и соответствует основному цвету текста */
+.placeholder_view_primary { background-color: var(--text-primary); }

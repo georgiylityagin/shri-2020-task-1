@@ -1,4 +1,4 @@
-@import '/src/common.blocks/theme.layer/theme.css';
+@import '/src/base.blocks/theme.layer/theme.css';
 
 .onoffswitch {
     width: 97px;

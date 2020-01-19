@@ -1,0 +1,42 @@
+@import '/src/base.blocks/theme.layer/theme.css';
+
+/* 
+    Блок layout служит для обвязки страницы 
+*/
+
+/* 
+    Элемент container - Контейнер для контента секции
+*/
+
+.layout__container {
+    background-color: var(--bgr-default);
+}
+
+/* Выравнивание контейнера по горизонтали */
+.layout__container_align_center {
+    margin: 0 auto;
+}
+
+/* Максимальная ширина контейнера */
+.layout__container_size_s {
+    max-width: 920px;
+}
+.layout__container_size_m {
+    max-width: 1280px;
+}
+
+/* Внутренние отступы по вертикали */
+.layout__container_space-v_xxxxl {
+    padding: var(--indent-xxxxl) 0;
+}
+.layout__container_space-v_xxxxxl {
+    padding: var(--indent-xxxxxl) 0;
+}
+
+/* Внешний отступ снизу */
+.layout__container_indent-b_xxl {
+    margin-bottom: var(--indent-xxl);
+}
+.layout__container_indent-b_xxxxl {
+    margin-bottom: var(--indent-xxxxl);
+}

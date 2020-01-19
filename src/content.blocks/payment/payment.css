@@ -1,7 +1,7 @@
-@import '/src/common.blocks/patterns.layer/form/form.css';
-@import '/src/common.blocks/content.layer/text/text.css';
-@import '/src/common.blocks/content.layer/button/button.css';
-@import '/src/common.blocks/content.layer/input/input.css';
+@import '/src/base.blocks/patterns.layer/form/form.css';
+@import '/src/base.blocks/content.layer/text/text.css';
+@import '/src/base.blocks/content.layer/button/button.css';
+@import '/src/base.blocks/content.layer/input/input.css';
 
 
 .payment,

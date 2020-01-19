@@ -1,9 +1,9 @@
-@import '/src/common.blocks/theme.layer/theme.css';
-@import '/src/common.blocks/patterns.layer/list/list.css';
-@import '/src/common.blocks/content.layer/text/text.css';
-@import '/src/common.blocks/content.layer/brand-logo/brand-logo.css';
-@import '/src/common.blocks/content.layer/accordion/accordion.css';
-@import '/src/common.blocks/patterns.layer/icon-plus/icon-plus.css';
+@import '/src/base.blocks/theme.layer/theme.css';
+@import '/src/base.blocks/patterns.layer/list/list.css';
+@import '/src/base.blocks/content.layer/text/text.css';
+@import '/src/base.blocks/content.layer/brand-logo/brand-logo.css';
+@import '/src/base.blocks/content.layer/accordion/accordion.css';
+@import '/src/base.blocks/patterns.layer/icon-plus/icon-plus.css';
 
 
 .history__transaction {
