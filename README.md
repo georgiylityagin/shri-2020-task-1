@@ -11,7 +11,7 @@
     src/
     ├── style.css   // Основной css-файл, куда импортируются необходимые для сборки страниц блоки
     ├── script.js
-    ├── common.blocks   // Базовые блоки дизайн-системы
+    ├── base.blocks   // Базовые блоки дизайн-системы
     |   ├── theme.layer     // Блок слоя темы
     |   ├── frame.layer     // Блоки слоя каркаса
     |   ├── pattern.layer   // Блоки слоя паттернов
@@ -29,17 +29,18 @@
 
 Некоторым контентным блокам, из которых собирается страница, не пришлось добавлять никаких дополнительных стилей. Страницы правильным образом собираются без них. Привожу ниже список данных блоков:
 
-- *.warning:* `warning__button-wrapper`;
-- *.product:* `product__content`, `product__footer`;
-- *.history:* `history__destination`, `history__pic`, `history__label`, `history__time`;
-- *.cover:* `cover__info`, `cover__footer`;
-- *.event:* `event__content`, `event__footer`, `event__description`;
+- .warning: `warning__button-wrapper`;
+- .product: `product__content`, `product__footer`;
+- .history: `history__destination`, `history__pic`, `history__label`, `history__time`;
+- .cover: `cover__info`, `cover__footer`;
+- .event: `event__content`, `event__footer`, `event__description`;
 
 ### Кнопка для переключения тем
 
 В задании не было сказано прямым текстом, что ползунок должен ездить вправо/влево при переключении тем. Однако я реализовал именно такое поведение, поскольку оно кажется логичным.
 
 Выглядит это так:
+
 ![Поведение кнопки](button-behavior.png)
 
 ### Типографика
