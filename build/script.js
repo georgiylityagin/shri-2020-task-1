@@ -29,8 +29,6 @@ function switchTheme(button) {
     }
 }
 
-
-
 function accordionToggle(target) {
     target.childNodes.forEach(function(item) {
         if (item.classList.contains('e-accordion__more')) {
